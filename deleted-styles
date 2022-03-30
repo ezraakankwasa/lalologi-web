@@ -1,0 +1,304 @@
+/* desktop version
+@media (min-width:1024) {
+    /* navabar */
+.navbar-nav{
+    margin-left: auto;
+}
+.navbar-toggler{
+    color: #fff;
+}
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: yellow;
+}
+
+/* top-banner */
+.cto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.nice-words {
+    padding-right: 5rem;
+}
+
+.nice-words h1 {
+    font-family: 'ar_techniregular', 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+.African {
+    color: yellow;
+}
+
+.nice-words h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.nice-img {
+    width: 14rem;
+    height: 10rem;
+}
+
+/* about */
+.about {
+    background-color: #9EDBCF;
+    color: #1C1C1C;
+}
+.about-text {
+    padding: 3.5rem;
+}
+
+.top-line {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.split {
+    display: flex;
+    justify-content: space-between;
+}
+
+.split p {
+    text-align: justify;
+}
+
+.split-1 {
+    margin-right: 2rem;
+}
+
+/* projects */
+.projects {
+    background: white;
+}
+
+.proj {
+    height: 400px;
+}
+/* ai */
+.ai-project {
+    display: flex;
+}
+
+.ai-desc{
+    color: black;
+    width: 50%;
+}
+
+.ai-img {
+    width: 40%;
+}
+
+.ai-desc-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.ai-desc-button{
+    color: #58D4BB;
+}
+.ai-desc-header {
+    font-weight: 600;
+}
+
+.ai-desc-motiv {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.product {
+    width: 100%;
+    height: 100%;
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inventor {
+    background: #58D4BB;
+    color: white;
+    width: 100%;
+    padding: 4rem;
+    text-align: center;
+}
+.inventor-img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    width: 105px;
+    height: 103px;
+}
+.inventor-name {
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* urbanflow */
+.music-project{
+    display: flex;
+}
+.music-img {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.music-product {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.music-inventor{
+    background: #FF0000;
+    color: white;
+    width: 90%;
+    padding: 4rem;
+    text-align: center;
+}
+
+/* ciqou */
+.cirqou-product {
+    width: 100%;
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #65E095;
+}
+
+.cirqou-inventor {
+    background-color: #42858C;
+}
+
+/* team */
+.team {
+    text-align: center;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: #2B8775;
+}
+.team-member img {
+    border-radius: 50%;
+    height: 171px;
+    width: 171px;
+    margin-bottom: 10px;
+}
+
+.team-member {
+    text-align: center;
+    width: 272px;
+    height: 243px;
+}
+
+.team-member p {
+    margin: 0;
+}
+
+.member-name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.member-title {
+    font-size: 0.8rem;
+}
+
+.team-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.part-1 {
+    margin-bottom: 40px;
+}
+
+.team h2 {
+    font-size: 30px;
+    margin-bottom: 3.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    background-color: black;
+    padding: 3rem 3rem 3rem 5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-small {
+    background-color: #161719;
+    text-align: center;
+    padding: 1rem;
+}
+
+.contact {
+    width: 263px;
+    height: 167px;
+}
+
+.contact-3 img{
+    width: 100%;
+}
+
+.contact-span {
+    margin-left: 10px;
+}
+
+.contact-1 p {
+    margin: 0;
+}
+
+.footer-small p {
+    margin: 0;
+}
+    
+
+<nav class="navbar navbar-dark navbar-expand-lg">
+        <div class="container-fluid d-flex align-items-center navi-container">
+            <a class="navbar-brand" href="index.html">
+                <img class="br-img" src="./img/dark 2.png" alt="" width="200" height="120">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>

@@ -1,12 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+    line-height: 1.5;
 }
 
-@font-face {
-    font-family: "ar_techniregular";
-    src: url('./') format("truetype");
-}
 body {
     background-image: linear-gradient(0.25turn,#0050B7, 60%,#58D4BB);
     color: #fff;
@@ -18,38 +15,62 @@ body {
     font-size: 40px;
     color: #fff;
     text-align: start;
-    font-family: 'ar_techniregular';
 }
 
-/* navabar */
+/* Mobile first design */
+/* navbar */
+/* .navbar {
+    border-bottom: 1px white solid; 
+} */
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+h2 {
+    text-transform: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.br-img {
+    width: 5rem;
+    height: 5rem;
+}
+.icon-color {
+    color: white;
+}
+
+.bac-img {
+    background-image: url("../img/world.jpg");
+    background-size:cover;
+    padding-bottom: 1.5rem;
+}
+
+/* navbar */
 .navbar-nav{
     margin-left: auto;
 }
-.navbar-toggler{
-    color: #fff;
-}
+
 .nav-link {
     color: white;
 }
 
-.nav-link:hover {
+.nav-link:hover{
     color: yellow;
 }
 
-/* top-banner */
-.cto {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5rem;
-}
-.nice-words {
-    padding-right: 5rem;
+.navi-container{
+    padding: 0 3.5rem;
 }
 
-.nice-words h1 {
-    font-family: 'ar_techniregular', 'Poppins', sans-serif;
+/* cto */
+.nice-img {
+    display: none;
+}
+
+.nice-words {
+    color: #fff;
     font-weight: 900;
-    font-size: 3.5rem;
     text-transform: uppercase;
 }
 
@@ -57,89 +78,27 @@ body {
     color: yellow;
 }
 
-.nice-words h2 {
-    font-family: 'Poppins', sans-serif;
-}
-
-.nice-img {
-    width: 550px;
-    height: 480px;
-}
-
-/* about */
-.about {
-    background-color: #9EDBCF;
-    color: #1C1C1C;
-}
-.about-text {
-    padding: 3.5rem;
-}
-
-.top-line {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 28px;
-}
-
-.split {
-    display: flex;
-    justify-content: space-between;
-}
-
-.split p {
-    text-align: justify;
-}
-
-.split-1 {
-    margin-right: 2rem;
-}
-
-/* projects */
+/*projects*/
 .projects {
-    background: white;
+    background: #2B8775;
 }
 
 .proj {
-    height: 400px;
-}
-/* ai */
-.ai-project {
     display: flex;
+    flex-direction: column;
 }
-
-.ai-desc{
-    color: black;
-    width: 50%;
-}
-
-.ai-img {
-    width: 40%;
-}
-
-.ai-desc-text {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    color: #fff;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.ai-desc-button{
+.proj-title {
     color: #58D4BB;
-}
-.ai-desc-header {
-    font-weight: 600;
+    text-transform: capitalize;
+    font-weight: 700;
 }
 
-.ai-desc-motiv {
-    font-weight: 400;
-    font-size: 1.5rem;
+.inventor-img {
+    border-radius: 50%;
 }
 
 .product {
-    width: 100%;
-    height: 100%;
-    padding: 4rem;
+    padding: 1.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -149,77 +108,213 @@ body {
 .inventor {
     background: #58D4BB;
     color: white;
-    width: 100%;
     padding: 4rem;
     text-align: center;
 }
+
+.inventor-name {
+    font-style: italic;
+    font-weight: 700;
+}
+
 .inventor-img {
     border-radius: 50%;
     margin-bottom: 20px;
     width: 105px;
     height: 103px;
 }
-.inventor-name {
-    font-style: italic;
+
+/* ai */
+.ai-img {
+    width: 50%;
+}
+
+.ai-project-desc{
+    color: #fff;
+}
+
+.ai-project-desc p {
+    font-weight: 500;
+}
+
+
+/* about */
+
+.about {
+    background-color: #9EDBCF;
+    color: #1C1C1C;
+}
+.about-text {
+    padding: 3.5rem;
+}
+
+.top-line {
+    padding-top: 1rem;
     font-weight: 700;
+    font-size: 19px;
 }
 
-/* urbanflow */
-.music-project{
+.split {
     display: flex;
-}
-.music-img {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-
-.music-product {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-}
-
-.music-inventor{
-    background: #FF0000;
-    color: white;
-    width: 90%;
-    padding: 4rem;
-    text-align: center;
-}
-
-/* ciqou */
-.cirqou-product {
-    width: 100%;
-    padding: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #65E095;
-}
-
-.cirqou-inventor {
-    background-color: #42858C;
 }
 
 /* team */
 .team {
     text-align: center;
-    padding: 4rem;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    height: 100vh;
     background-color: #2B8775;
+}
+
+.team-title {
+    margin-bottom: 0;
 }
 .team-member img {
     border-radius: 50%;
-    height: 171px;
-    width: 171px;
+    height: 140px;
+    width: 140px;
+    margin-bottom: 10px;
+}
+
+.team-member {
+    text-align: center;
+    width: 17rem;
+    height: 15.1875rem;
+    margin-bottom: 1rem;
+}
+
+.team-member p {
+    margin: 0;
+}
+
+.member-name {
+    font-weight: 700;
+    font-size: 1.10rem;
+}
+
+.member-title {
+    font-size: 0.8rem;
+}
+
+.team h2 {
+    margin-bottom: 3.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.baba {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    background-color: black;
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-small {
+    background-color: #161719;
+    text-align: center;
+    padding: 1rem;
+}
+
+.contact {
+    width: 263px;
+    height: 167px;
+}
+
+.contact-3 {
+    width: 40%;
+}
+
+.contact-3 img{
+    width: 60%;
+}
+
+.contact-span {
+    margin-left: 10px;
+}
+.contact-1 {
+    display: none;
+}
+
+.contact-1 p {
+    margin: 0;
+}
+
+.footer-small p {
+    margin: 0;
+    font-size: 0.875rem;
+}
+/* end of mobile design */
+
+/*desktop design*/
+@media (min-width:1024px) {
+    h1 {
+        font-weight: 900;
+        font-size: 3.5rem;
+    }
+    .bac-img {
+        height: 100vh;
+    }
+    /* cto */
+.cto {
+        display: flex;
+        align-items: center;
+        padding: 3.5rem;
+}
+.nice-img {
+    display: unset;
+    width: 26rem;
+    height: 23rem;
+}
+
+.nice-words {
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/* projects */
+.ai-img {
+    width: 25%;
+}
+.ai-project-desc {
+    display: flex;
+    justify-content: center;
+}
+.split-ai {
+    width: 40%;
+}
+.inventor {
+    padding: 3.5rem 6rem;
+}
+
+/* about */
+.top-line {
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.split {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.split-1 {
+    margin-right: 1rem;
+}
+
+/* team */
+.team-member img {
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
     margin-bottom: 10px;
 }
 
@@ -243,23 +338,16 @@ body {
     font-size: 0.8rem;
 }
 
-.team-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.part-1 {
-    margin-bottom: 40px;
-}
-
 .team h2 {
     font-size: 30px;
     margin-bottom: 3.5rem;
     color: #fff;
     font-weight: bold;
 }
+.team-leaders {
+    justify-content: space-around;
 
+}
 /* footer */
 .footer {
     display: flex;
@@ -279,9 +367,12 @@ body {
     width: 263px;
     height: 167px;
 }
+.contact-1 {
+    display: revert;
+}
 
 .contact-3 img{
-    width: 100%;
+    width: 60%;
 }
 
 .contact-span {
@@ -294,4 +385,7 @@ body {
 
 .footer-small p {
     margin: 0;
+}
+
+
 }
